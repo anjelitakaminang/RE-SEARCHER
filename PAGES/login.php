@@ -46,19 +46,19 @@ include "koneksi.php";
 
     <div class="login-container">
     <form method="post">
-      <label htmlFor="email">Email Mahasiswa</label>
+      <label htmlFor="email">Email</label>
       <input
         type="text"
         name="username"
-        placeholder="Masukkan email mahasiswa"
+        placeholder="Input your email"
 
       />
 
-      <label htmlFor="password">Kata Sandi</label>
+      <label htmlFor="password">Password</label>
       <input
         type="password"
         name="password"
-        placeholder="Masukkan kata sandi"
+        placeholder="Input your password"
       />
 
       <td><button type="submit" name="login">Login</button></td>
