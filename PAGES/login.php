@@ -29,7 +29,7 @@ include "koneksi.php";
     ?>
         <div>
          <header>
-            <img src="../pic/logo.png"/>
+            <img src="pic/logo.png"/>
             <h1>RESEARCH PROJECT TOPIC RECOMMENDATION SYSTEM</h1>
          </header>
 
