@@ -26,23 +26,22 @@ include "koneksi.php";
                 echo '<script>alert("Email atau Password tidak ditemukan");</script>';
             }
         }
-?>
+    ?>
         <div>
-        <header>
-            <img src="pic/LOGO_UNIVERSITAS_KLABAT.png"/>
+         <header>
+            <img src="../pic/logo.png"/>
             <h1>RESEARCH PROJECT TOPIC RECOMMENDATION SYSTEM</h1>
-        </header>
+         </header>
+
         <div className="login-container">
             <Masuk />
         </div>
 
-        <footer>
-            <h3>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h3>
-        </footer>
-        </div>
-
-    <div id="root"></div>
-
+      <footer>
+        <h3>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h3>
+      </footer>
+    </div>
+         <div id="root"></div>
 
     <div class="login-container">
     <form method="post">
@@ -65,7 +64,6 @@ include "koneksi.php";
     </form>
     </div> 
 
-	<script src="masuk.js"></script>
  </body>
  </html>
 

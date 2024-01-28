@@ -1,0 +1,224 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav .header {
+  color: white;
+  padding: 5px;
+  display: flex;
+  letter-spacing: 1px;
+  justify-content: space-around;
+}
+
+nav .header img {
+  height: 60px;
+  margin-left: 15px;
+  margin-right: 25px;
+}
+
+body{
+  font-family: 'Monserrat', sans-serif;
+  background: url('') center center fixed no-repeat;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+nav{
+  display: flex;
+  background-color: #442454;
+  justify-content: space-around;
+  padding: 10px 0;
+  align-items: center;
+  color:aliceblue;
+  
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+}
+nav ul li a{
+  color:aliceblue;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+nav ul li a:hover{
+  color:rgb(255, 255, 255);
+}
+
+
+/*Hamburger Menu*/
+.menu-toggle{
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.menu-toggle span{
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+
+
+/*Hamburger Menu Animation*/
+
+.menu-toggle span:nth-child(2){
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(2){
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+  background-color: white;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(4){
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px, -2px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+  opacity: 0;
+  transform: scale(0);
+}
+
+
+
+
+
+/*RESPONSIF BREAKPOINT */
+
+/*ukuran tablet*/
+
+@media screen and (max-width: 768px){
+  .menu-toggle{
+      display: flex;
+  }
+  nav ul{
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 80px;
+      height: 100pv;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: #442454;
+      z-index: -1;
+      transform: translateX(100%);
+      transition: all 1s;
+  }
+}
+
+nav ul.slide{
+  transform: translateX(0);
+}
+
+
+
+
+footer {
+  background-color: #442454;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 0;
+  left: 0; /* Align to the left */
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+
+
+
+
+.form-row0 {
+  max-width: 300px;
+  width: 300%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.form-row1 {
+  max-width: 300px;
+  width: 300%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.form-row2 {
+  max-width: 500px;
+  width: 500%;
+  height: 100px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  outline: #ffffff;
+}
+
+input::placeholder {
+  font-style: italic;
+  text-align: center;
+}
+
+
+button {
+  background-color: #442454;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #6b467d;
+}
+

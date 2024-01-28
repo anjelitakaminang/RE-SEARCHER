@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+include "koneksi.php";
 //mengecek apakah ada session user yang aktif
 if(!isset($_SESSION['user'])) {
         header('location:login.php');
@@ -9,23 +9,48 @@ if(!isset($_SESSION['user'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>System Recommendation</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Navbar</title>
+    <link rel="stylesheet" href="css/home.css">
 </head>
-<body align="center">
+<body>
+    <nav>
+        <div class="header">
+                <img src="../PAGES/pic/logo.png"/>
+                <h2>RESEARCH PROJECT TOPIC SYSTEM RECOMMENDER</h2>
+        </div>
+        <ul>
+            <li><a href="">Profile</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Grading Standard</a></li>
+            <li><a href="">Setting</a></li>
+            <li><h5><a href="logout.php">Logout</a></h5></li>
+        </ul>
+            <div class="menu-toggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>
+    </nav>
 
-	<div class="header">
-	<h2>RE-SEARCHER</h2>
-	<h6>You're in!</h6>
-	</div>
-    <hr>
-	<h5><a href="logout.php">Logout</a></5>
+
+
+    <footer>
+        <h3>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h3>
+    </footer>
+
+
+
+    </div>
+    <div id="root"></div>
+
 	<div class="container">
 		<h4> Input your grade and interest:</h4>
 		<tr>
 			<form id="recommendation-form">
-			<div class="form-row">
+			<div class="form-row0">
 				<label for="major">Major:</label>
 				<select id="major" name="major">
 					<option value="WD">Computer Programming</option>
@@ -48,13 +73,14 @@ if(!isset($_SESSION['user'])) {
 				</select>
 			</div>
 	
-			<div class="form-row">
+			<div class="form-row1">
 				<label for="grade">Grade:</label>
 				<input type="number" id="grade" name="grade" min="0" max="100">
+				<button type="submit">Submit</button>
 			</div>
-			<div class="form-row">
+			<div class="form-row2">
 				<label for="interest">Interest:</label>
-				<input type="text" id="interest" name="interest" placeholder="e.g. I interested in Machine Learning..." style="width: 50%">
+				<input type="text" id="interest" name="interest" placeholder="e.g. I interested in Machine Learning...">
 			</div>
 			</div>
 				<button type="submit">Generate</button>
@@ -67,8 +93,8 @@ if(!isset($_SESSION['user'])) {
 					</ul>
 				</div>
 			</div>
-		<script src="js/home.js"></script>
-
+		      
+		<script src="js/script.js"></script>
 		<div id="app"></div>
 </body>
 </html>
