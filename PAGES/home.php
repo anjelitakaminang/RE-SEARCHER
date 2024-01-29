@@ -17,7 +17,7 @@ if(!isset($_SESSION['user'])) {
 <body>
     <nav>
         <div class="header">
-		<img src="../PAGES/pic/logo.png" alt="myphoto">
+				<img src="../PAGES/pic/logo.png" alt="myphoto">
                 <h1>RE-SEARCHER</h1>
         </div>
         <ul>
@@ -71,7 +71,7 @@ if(!isset($_SESSION['user'])) {
 			<div class="form-row1">
 				<label for="grade">Grade:</label>
 				<input type="number" id="grade" name="grade" min="0" max="100">
-				<button type="submit">Submit</button>
+				<button type="submit">Add</button>
 			</div>
 			<div class="form-row2">
 				<label for="interest">Interest:</label>
@@ -83,11 +83,12 @@ if(!isset($_SESSION['user'])) {
 
 			<div class="sidebar">
 					<h2>Search History</h2>
-					<ul id="search-history">
+					<ul id="searchHistory">
 						<!-- Previous searches will be displayed here -->
 					</ul>
 				</div>
 			</div>
+			<script src="js/side.js"></script>
 		      
 		<script src="js/script.js"></script>
 		<div id="app"></div>

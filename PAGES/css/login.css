@@ -28,7 +28,7 @@ body::before {
 header {
   background-color: #442454;
   color: white;
-  padding: 5px;
+  padding: 10px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -38,8 +38,6 @@ header {
   left: 0; /* Align to the left */
   width: 100%;
   z-index: 1;
-  letter-spacing: 1px;
-  justify-content: space-around;
 }
 
 header img {
