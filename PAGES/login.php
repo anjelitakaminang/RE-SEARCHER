@@ -20,7 +20,7 @@ include "koneksi.php";
             if (mysqli_num_rows($query) > 0){
                 $data = mysqli_fetch_array($query);
                 $_SESSION['user'] = $data;
-                echo '<script>alert("Welcome, '.$data['nama'].'"); location.href="home.php";</script>';
+                echo '<script>location.href="home.php";</script>';
 
             }else{
                 echo '<script>alert("Email atau Password tidak ditemukan");</script>';
@@ -33,17 +33,7 @@ include "koneksi.php";
             <h1>RESEARCH PROJECT TOPIC RECOMMENDATION SYSTEM</h1>
          </header>
 
-        <div className="login-container">
-            <Masuk />
-        </div>
-
-      <footer>
-        <h3>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h3>
-      </footer>
-    </div>
-         <div id="root"></div>
-
-    <div class="login-container">
+         <div class="login-container">
     <form method="post">
       <label htmlFor="email">Email</label>
       <input
@@ -63,6 +53,12 @@ include "koneksi.php";
       <td><button type="submit" name="login">Login</button></td>
     </form>
     </div> 
+
+      <footer>
+        <h3>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h3>
+      </footer>
+    </div>
+         <div id="root"></div>
 
  </body>
  </html>

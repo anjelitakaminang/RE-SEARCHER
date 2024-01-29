@@ -11,21 +11,21 @@ if(!isset($_SESSION['user'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan Navbar</title>
+    <title>Halaman HOME</title>
     <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
     <nav>
         <div class="header">
-                <img src="../PAGES/pic/logo.png"/>
-                <h2>RESEARCH PROJECT TOPIC SYSTEM RECOMMENDER</h2>
+		<img src="../PAGES/pic/logo.png" alt="myphoto">
+                <h1>RE-SEARCHER</h1>
         </div>
         <ul>
             <li><a href="">Profile</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Grading Standard</a></li>
             <li><a href="">Setting</a></li>
-            <li><h5><a href="logout.php">Logout</a></h5></li>
+            <li><a href="logout.php">Logout</a></li>
         </ul>
             <div class="menu-toggle">
                 <input type="checkbox" />
@@ -35,14 +35,9 @@ if(!isset($_SESSION['user'])) {
         </div>
     </nav>
 
-
-
     <footer>
         <h3>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h3>
     </footer>
-
-
-
     </div>
     <div id="root"></div>
 
