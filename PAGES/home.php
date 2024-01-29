@@ -36,7 +36,7 @@ if(!isset($_SESSION['user'])) {
     </nav>
 
     <footer>
-        <h3>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h3>
+        <h6>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h6>
     </footer>
     </div>
     <div id="root"></div>
@@ -82,7 +82,7 @@ if(!isset($_SESSION['user'])) {
 			</form>
 
 			<div class="sidebar">
-					<h2>Search History</h2>
+					<h3>Search History</h3>
 					<ul id="searchHistory">
 						<!-- Previous searches will be displayed here -->
 					</ul>
