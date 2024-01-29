@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Grading System - Sistem Rekomendasi FILKOM</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            position: relative;
+            background-color: #ffffff; /* Set background color to white */
+            text-size-adjust: none;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            z-index: -1;
+        }
+
+        header {
+            background-color: #442454;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+        }
+
+        header img {
+            height: 60px;
+            margin-left: 15px;
+            margin-right: 25px;
+        }
+
+        .center-box {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 135px;
+            width: 80%;
+            max-width: 800px;
+            margin-bottom: 100px;
+            border: 2px solid #000000;
+            border-radius: 10px; /* Added border radius */
+            overflow: hidden; /* Hide the overflowing content */
+        }
+
+        h2 {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #000000;
+            padding: 8px;
+            font-size: 0.8em;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-size: 1em;
+        }
+
+        th.colspan-3 {
+            background-color: #f2f2f2;
+            font-size: 0.9em;
+        }
+
+        footer {
+            background-color: #442454;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="unklab_logo.png" alt="Logo">
+        <h1>RESEARCH PROJECT TOPIC RECOMMENDATION SYSTEM</h1>
+    </header>
+
+    <div class="center-box">
+        <h2 style="font-size: 1em;">Grading System</h2>
+        <p>
+            Sistem ini memberikan rekomendasi topik penelitian yang sesuai dengan keinginan pengguna yang didasarkan
+            pada input nilai mata kuliah major dan preferensi atau minat pengguna. Nilai yang dimasukkan pengguna ke
+            dalam sistem akan divalidasi apakah telah mencapai standart ketentuan nilai yang baik, sehingga nantinya
+            hasil analisis yang akan diberikan juga sesuai dengan kebutuhan pengguna. Standard nilai yang digunakan
+            adalah standard penilaian yang diterapkan oleh Universitas Klabat - Airmadidi.
+        </p>
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th colspan="3" style="font-size: 0.9em;">Nilai</th>
+                </tr>
+                <tr>
+                    <th style="font-size: 0.8em;">Angka</th>
+                    <th style="font-size: 0.8em;">Huruf</th>
+                    <th style="font-size: 0.8em;">Bobot</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="font-size: 0.8em;">100 - 91</td>
+                    <td style="font-size: 0.8em;">A</td>
+                    <td style="font-size: 0.8em;">4.0</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 0.8em;">90 - 85</td>
+                    <td style="font-size: 0.8em;">A-</td>
+                    <td style="font-size: 0.8em;">3.7</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 0.8em;">84 - 82</td>
+                    <td style="font-size: 0.8em;">B+</td>
+                    <td style="font-size: 0.8em;">3.3</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 0.8em;">81 - 78</td>
+                    <td style="font-size: 0.8em;">B</td>
+                    <td style="font-size: 0.8em;">3.0</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 0.8em;">77 - 75</td>
+                    <td style="font-size: 0.8em;">B-</td>
+                    <td style="font-size: 0.8em;">2.7</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 0.8em;">74 - 70</td>
+                    <td style="font-size: 0.8em;">C+</td>
+                    <td style="font-size: 0.8em;">2.3</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 0.8em;">69 - 67</td>
+                    <td style="font-size: 0.8em;">C</td>
+                    <td style="font-size: 0.8em;">2.0</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 0.8em;">66 - 60</td>
+                    <td style="font-size: 0.8em;">C-</td>
+                    <td style="font-size: 0.8em;">1.7</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 0.8em;">59 - 40</td>
+                    <td style="font-size: 0.8em;">D</td>
+                    <td style="font-size: 0.8em;">1.0</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 0.8em;">39 - 0</td>
+                    <td style="font-size: 0.8em;">F</td>
+                    <td style="font-size: 0.8em;">0.0</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <h3>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h3>
+    </footer>
+</body>
+
+</html>
