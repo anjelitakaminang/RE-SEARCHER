@@ -5,6 +5,8 @@ include "koneksi.php";
 if(!isset($_SESSION['user'])) {
         header('location:login.php');
 }
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,12 +20,12 @@ if(!isset($_SESSION['user'])) {
     <nav>
         <div class="header">
 				<img src="../PAGES/pic/logo.png" alt="myphoto">
-                <h1>RE-SEARCHER</h1>
+                <h1>re.searcher</h1>
         </div>
         <ul>
             <li><a href="">Profile</a></li>
             <li><a href="">About</a></li>
-            <li><a href="">Grading Standard</a></li>
+            <li><a href="grading.php">Grading Standard</a></li>
             <li><a href="">Setting</a></li>
             <li><a href="logout.php">Logout</a></li>
         </ul>

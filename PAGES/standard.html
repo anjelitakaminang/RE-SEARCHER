@@ -7,6 +7,10 @@
     <meta name="theme-color" content="#ffffff" />
     <title>Grading System - Sistem Rekomendasi FILKOM</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+         }
         body {
             font-family: Arial, Helvetica, sans-serif;
             display: flex;
@@ -31,31 +35,13 @@
             z-index: -1;
         }
 
-        header {
-            background-color: #442454;
-            color: white;
-            padding: 10px;
-            width: 100%;
-            box-sizing: border-box;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            position: fixed;
-            top: 0;
-            z-index: 1;
-        }
-
-        header img {
-            height: 60px;
-            margin-left: 15px;
-            margin-right: 25px;
-        }
+    
 
         .center-box {
             background-color: #ffffff;
             padding: 20px;
             text-align: center;
-            margin-top: 135px;
+            margin-top: 100px;
             width: 80%;
             max-width: 800px;
             margin-bottom: 100px;
@@ -109,14 +95,69 @@
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
         }
+
+        
+nav{
+  display: flex;
+  background-color: #442454;
+  justify-content: space-between;
+  color:white;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+nav header {
+  justify-content: space-between;
+  display: flex;
+  letter-spacing: 5px;
+  align-items: center;
+  background-color: #442454;
+  color: white;
+  width: 100%;
+}
+
+nav header img {
+  height: 60px;
+  margin-left: 15px;
+  margin-right: 25px;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding-right: 3%;
+}
+
+nav ul li a {
+  color:aliceblue;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+nav ul li a:hover{
+  color:rgb(255, 255, 255);
+}
+
     </style>
 </head>
 
 <body>
-    <header>
-        <img src="unklab_logo.png" alt="Logo">
-        <h1>RESEARCH PROJECT TOPIC RECOMMENDATION SYSTEM</h1>
-    </header>
+  
+
+    <nav>
+        <div><header>
+            <img src="pic/logo.png" alt="Logo">
+            <h1>RE-SEARCHER</h1>
+        </header>
+        </div>
+        <ul>
+            <li><a href="login.php">Home</a></li>
+        </ul>
+    </nav>
+
 
     <div class="center-box">
         <h2 style="font-size: 1em;">Grading System</h2>
@@ -193,10 +234,12 @@
             </tbody>
         </table>
     </div>
+    <div id="root"></div>
 
     <footer>
         <h3>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h3>
     </footer>
+    
 </body>
 
 </html>
