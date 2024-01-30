@@ -87,9 +87,9 @@ if(!isset($_SESSION['user'])) {
 						<!-- Previous searches will be displayed here -->
 					</ul>
 				</div>
+				<script src="js/side.js"></script>
 			</div>
-			<script src="js/side.js"></script>
-		      
+			
 		<script src="js/script.js"></script>
 		<div id="app"></div>
 </body>
