@@ -25,25 +25,18 @@ body::before {
   z-index: -1;
 }
 
-header {
-  background-color: #442454;
-  color: white;
-  padding: 10px;
-  box-sizing: border-box;
+.login-container h1 {
+  color:  #442454;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  position: fixed;
-  top: 0;
-  left: 0; /* Align to the left */
-  width: 100%;
-  z-index: 1;
+  padding: 0;
 }
 
-header img {
-  height: 60px;
-  margin-left: 15px;
-  margin-right: 25px;
+.login-container img {
+  height: 80px;
+  display: flex;
+  padding: 0;
 }
 
 .login-container {
@@ -51,9 +44,8 @@ header img {
   width: 100%;
   background: rgba(255, 255, 255, 0.8);
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  border-radius: 20px;
   position: relative;
   z-index: 1;
   margin-top: 20px;
@@ -78,7 +70,7 @@ h1 {
 }
 
 label {
-  display: block;
+  display: flex;
   margin-bottom: 8px;
   text-align: center;
 }
@@ -87,15 +79,14 @@ input {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border-radius: 10px;
+  border-radius: 20px;
   box-sizing: border-box;
   text-align: center;
-  outline: #ffffff;
 }
 
 input::placeholder {
-  font-style: italic;
-  text-align: center;
+  display: flex;
+  text-align: start;
 }
 
 button {
@@ -104,7 +95,7 @@ button {
   padding: 10px 15px;
   border: none;
   margin-top: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   cursor: pointer;
   width: 100%;
 }

@@ -27,37 +27,26 @@ include "koneksi.php";
             }
         }
     ?>
-        <div>
-         <header>
-            <img src="pic/logo.png"/>
-            <h1>RESEARCH PROJECT TOPIC RECOMMENDATION SYSTEM</h1>
-         </header>
+      
 
          <div class="login-container">
+         <h1>re.searcher</h1>
     <form method="post">
-      <label htmlFor="email">Email</label>
       <input
         type="text"
         name="username"
-        placeholder="Input your email"
+        placeholder="Email"
 
       />
-
-      <label htmlFor="password">Password</label>
       <input
         type="password"
         name="password"
-        placeholder="Input your password"
+        placeholder="Password"
       />
 
       <td><button type="submit" name="login">Login</button></td>
     </form>
     </div> 
-
-      <footer>
-        <h3>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h3>
-      </footer>
-    </div>
          <div id="root"></div>
 
  </body>
