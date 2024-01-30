@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About and Developer'</title>
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            position: relative;
+            background-color: #ffffff; /* Set background color to white */
+            text-size-adjust: none;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            z-index: -1;
+            padding: 20%;
+        }
+
+        header {
+            background-color: #442454;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+        }
+
+        header img {
+            height: 60px;
+            margin-left: 15px;
+            margin-right: 25px;
+        }
+
+        .center-box {
+            background-color: #ffffff;
+            padding: 0px;
+            text-align: center;
+            margin-top: 135px;
+            width: 80%;
+            max-width: 800px;
+            margin-bottom: 10px;
+            border: 2px solid #000000;
+            border-radius: 10px; /* Added border radius */
+            overflow: hidden; /* Hide the overflowing content */
+        }
+    
+        h2 {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 0;
+        }
+
+        th,
+        td {
+            border: 1px solid #000000;
+            padding: 8px;
+            font-size: 0.8em;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-size: 1em;
+        }
+
+        th.colspan-3 {
+            background-color: #f2f2f2;
+            font-size: 0.9em;
+        }
+
+        footer {
+            background-color: #442454;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+      
+        .row{
+            justify-content: center;
+            align-items: center;
+            margin-left: 25%;
+        }
+
+        .row .column {
+            float: left;
+            width: 20%;
+            padding: 15px;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .describe {
+            padding: 15px;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <img src="../PAGES/pic/logo.png" alt="Logo">
+        <h1>RESEARCH PROJECT TOPIC RECOMMENDATION SYSTEM</h1>
+    </header>
+
+<div class="center-box">
+    <table id="describe">
+        <thead>
+            <h1>About Researcher Recommendation System</h1>
+        </thead>
+        <tbody>
+            <p>
+                Sistem rekomendasi adalah sistem atau aplikasi yang dibuat untuk dapat menyediakan dan memberikan rekomendasi dari suatu item untuk membuat suatu keputusan yang diinginkan oleh pengguna sistem. 
+                Sistem rekomendasi merupakan suatu alat dan teknik dalam Artificial Intelligence software (perangkat lunak) yang dapat memberikan saran-saran kepada pengguna untuk item yang sekiranya dapat bermanfaat bagi pengguna dalam menentukan pilihan.
+                Sedangkan pengertian Artificial Intelligence (AI) secara umum berarti kecerdasan buatan komputer yang bisa meniru kemampuan intelektual manusia. AI-Powered Recommendations dalam sistem rekomendasi yaitu sistem yang menggunakan teknik-teknik kecerdasan buatan seperti deep learning, neural networks, dan algoritma pembelajaran mesin lainnya untuk meningkatkan akurasi dan personalisasi rekomendasi
+            </p>
+        </tbody>
+    </table>
+</div>
+
+    <footer>
+        <h3>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h3>
+    </footer>
+
+    <h1>Developer Team</h1>
+        <div class="row">
+            <div class="column">
+              <img src="../src/enjiii.png" alt="Snow" style="width: 100%">
+              <div className="describe">Anjelita Ferensca Kaminang</div>
+            </div>
+            <div class="column">
+              <img src="../src/jian-modified.png" alt="Forest" style="width:100%">
+                <div className="describe">Jian Kezia Tesalonica Yuune</div>
+            </div>
+            <div class="column">
+                <img src="../src/wagey-modified.png" alt="Beach" style="width:100%">
+                <div className="describe">Syalom Gabriela Wagey</div>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+</head>
+<body>
+    <!-- Form Untuk Mengganti Password-->
+
+    <style>
+        div{
+            width : 50%;
+            justify-content: space-between;
+            display: flex;
+        }
+        input[type=text], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+          width: 100%;
+          background-color: #442454;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        div {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+
+        .passform {
+            border: 1px solid black;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-right: 150px;
+            margin-left: 80px;
+        }
+        </style>
+        <body>
+        
+        <h3>Are you sure you want to change your</h3>
+        
+        <div id="passform">
+          <form action="/action_page.php">
+            <label for="fname">Old Password</label>
+            <input type="text" id="fname" name="Old Password" placeholder="input your old password">
+        
+            <label for="lname">New Password</label>
+            <input type="text" id="lname" name="New Password" placeholder="input your new password"> 
+
+            <label for="lname">Retype</label>
+            <input type="text" id="lname" name="Retype new password" placeholder="retype new password">     
+            <input type="submit" value="Submit">
+          </form>
+        </div>        
+</body>
+</html>
