@@ -28,9 +28,9 @@ include "koneksi.php";
         }
     ?>
       
+  <div class="login-container">
+    <h1>RE.SEARCHER</h1>
 
-         <div class="login-container">
-         <h1>re.searcher</h1>
     <form method="post">
       <input
         type="text"
@@ -46,9 +46,8 @@ include "koneksi.php";
 
       <td><button type="submit" name="login">Login</button></td>
     </form>
-    </div> 
-         <div id="root"></div>
-
+  </div> 
+  <div id="root"></div>
  </body>
  </html>
 

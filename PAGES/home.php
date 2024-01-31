@@ -20,13 +20,13 @@ if(!isset($_SESSION['user'])) {
     <nav>
         <div class="header">
 				<img src="../PAGES/pic/logo.png" alt="myphoto">
-                <h1>re.searcher</h1>
+                <h1>RE.SEARCHER</h1>
         </div>
         <ul>
             <li><a href="">Profile</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="standard.html">Grading Standard</a></li>
-            <li><a href="">Setting</a></li>
+            <li><a href="html/about.html">About</a></li>
+            <li><a href="html/grading.html">Grading Standard</a></li>
+            <li><a href="html/setting.html">Settings</a></li>
             <li><a href="logout.php">Logout</a></li>
         </ul>
             <div class="menu-toggle">
@@ -36,7 +36,7 @@ if(!isset($_SESSION['user'])) {
                 <span></span>
         </div>
     </nav>
-
+	
     <footer>
         <h6>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h6>
     </footer>

@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
          }
-        body {
+         body {
             font-family: Arial, Helvetica, sans-serif;
             display: flex;
             flex-direction: column;
@@ -29,22 +29,62 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
             height: 100%;
             background: rgba(255, 255, 255, 0.2);
             z-index: -1;
+            padding: 20%;
         }
 
-    
+        nav header {
+            justify-content: space-between;
+            display: flex;
+            letter-spacing: 4px;
+            align-items: center;
+        }
+                
+        nav{
+            display: flex;
+            background-color: #442454;
+            justify-content: space-between;
+            color:white;
+            height: 80px;
+            align-items: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+
+        nav ul{
+            display: flex;
+            list-style: none;
+            width: 10%;
+            justify-content: space-around;
+        }
+
+        nav ul li a {
+            color:aliceblue;
+            text-decoration: none;
+            font-size: 0.8em;
+        }
+
+        nav ul li a:hover{
+            color:rgb(255, 255, 255);
+        }
+
+        nav header img {
+            height: 60px;
+            margin-left: 15px;
+            margin-right: 25px;
+        }
 
         .center-box {
             background-color: #ffffff;
             padding: 20px;
             text-align: center;
-            margin-top: 100px;
+            margin-top: 135px;
             width: 80%;
             max-width: 800px;
-            margin-bottom: 100px;
+            margin-bottom: 50px;
             border: 2px solid #000000;
             border-radius: 10px; /* Added border radius */
             overflow: hidden; /* Hide the overflowing content */
@@ -95,66 +135,18 @@
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
         }
-
-        
-nav{
-  display: flex;
-  background-color: #442454;
-  justify-content: space-between;
-  color:white;
-  width: 100%;
-  height: 70px;
-  align-items: center;
-  position: fixed;
-  top: 0;
-}
-
-nav header {
-  justify-content: space-between;
-  display: flex;
-  letter-spacing: 5px;
-  align-items: center;
-  background-color: #442454;
-  color: white;
-  width: 100%;
-}
-
-nav header img {
-  height: 60px;
-  margin-left: 15px;
-  margin-right: 25px;
-}
-
-nav ul{
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  padding-right: 3%;
-}
-
-nav ul li a {
-  color:aliceblue;
-  text-decoration: none;
-  font-size: 0.9em;
-}
-nav ul li a:hover{
-  color:rgb(255, 255, 255);
-}
-
     </style>
 </head>
 
 <body>
-  
-
     <nav>
         <div><header>
-            <img src="pic/logo.png" alt="Logo">
-            <h1>re.searcher</h1>
+            <img src="../pic/logo.png" alt="Logo">
+            <h1>RE.SEARCHER</h1>
         </header>
         </div>
         <ul>
-            <li><a href="login.php">Home</a></li>
+            <li><a href="../home.php">Home</a></li>
         </ul>
     </nav>
 
