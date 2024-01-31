@@ -25,7 +25,7 @@ if(!isset($_SESSION['user'])) {
         <ul>
             <li><a href="">Profile</a></li>
             <li><a href="">About</a></li>
-            <li><a href="grading.php">Grading Standard</a></li>
+            <li><a href="standard.html">Grading Standard</a></li>
             <li><a href="">Setting</a></li>
             <li><a href="logout.php">Logout</a></li>
         </ul>
