@@ -109,7 +109,7 @@
 
         nav header img {
             height: 60px;
-            margin-left: 15px;
+            margin-left: 20px;
             margin-right: 25px;
         }
 
@@ -125,7 +125,17 @@
             border-top-right-radius: 10px;
         }
 
-        
+        div h3{
+            padding: 30px;
+        }
+                
+        label {
+        display: block;
+        margin-bottom: 6px;
+        justify-self: start;
+        text-align: left;
+        }
+
     </style>
 </head>
 
@@ -140,10 +150,9 @@
           <li><a href="../home.php">Home</a></li>
       </ul>
    </nav>
-
-    <h3>Are you sure you want to change your password?</h3>
-        
+ 
     <div id="passform">
+    <h3>Are you sure you want to change your password?</h3>
         <form action="/action_page.php">
             <label for="fname">Old Password</label>
             <input type="text" id="fname" name="Old Password" placeholder="input your old password">
@@ -159,6 +168,7 @@
 
     <footer>
         <h3>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h3>
-    </footer>       
+    </footer>
+      
 </body>
 </html>
