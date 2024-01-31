@@ -18,7 +18,7 @@ if(!isset($_SESSION['user'])) {
 <body>
 	<nav>     
       <div><header>
-	  	  <img src="pic/logo.png" alt="Logo">
+	  	<img src="pic/logo.png" alt="Logo">
           <h1>RE.SEARCHER</h1>
       </header>
       </div>
@@ -45,7 +45,6 @@ if(!isset($_SESSION['user'])) {
 
 	<div class="container">
 		<h4> Input your grade and interest:</h4>
-		<tr>
 			<form id="recommendation-form">
 			<div class="form-row0">
 				<label for="major">Major:</label>
@@ -79,20 +78,17 @@ if(!isset($_SESSION['user'])) {
 				<label for="interest">Interest:</label>
 				<input type="text" id="interest" name="interest" placeholder="e.g. I interested in Machine Learning...">
 			</div>
-			</div>
 				<button type="submit">Generate</button>
 			</form>
-
 			<div class="sidebar">
-					<h3>Search History</h3>
-					<ul id="searchHistory">
-						<!-- Previous searches will be displayed here -->
-					</ul>
-				</div>
-				<script src="js/side.js"></script>
+				<h3>Search History</h3>
+				<ul id="searchHistory">
+					<!-- Previous searches will be displayed here -->
+				</ul>
 			</div>
-			
-		<script src="js/script.js"></script>
-		<div id="app"></div>
+			<script src="js/side.js"></script>
+			<script src="js/script.js"></script>
+			<div id="app"></div>
+		</div>			
 </body>
 </html>
