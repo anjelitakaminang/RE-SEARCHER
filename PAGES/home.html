@@ -1,12 +1,3 @@
-<?php
-session_start();
-include "koneksi.php";
-//mengecek apakah ada session user yang aktif
-if(!isset($_SESSION['user'])) {
-        header('location:login.php');
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +9,7 @@ if(!isset($_SESSION['user'])) {
 <body>
 	<nav>     
       <div><header>
-	  	  <img src="pic/logo.png" alt="Logo">
+	  	<img src="pic/logo.png" alt="Logo">
           <h1>RE.SEARCHER</h1>
       </header>
       </div>

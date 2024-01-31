@@ -13,9 +13,6 @@ body {
   position: relative;
   background-color: #ffffff; /* Set background color to white */
   text-size-adjust: none;
-  font-family: 'Monserrat', sans-serif;
-  overflow-x: hidden;
-  text-align: center;
 }
 
 body::before {
@@ -29,6 +26,13 @@ body::before {
   padding: 20%;
 }
 
+nav header {
+  justify-content: space-between;
+  display: flex;
+  letter-spacing: 5px;
+  align-items: center;
+}
+      
 nav{
   display: flex;
   background-color: #442454;
@@ -36,25 +40,15 @@ nav{
   color:white;
   height: 80px;
   align-items: center;
-}
-
-nav .header {
-  justify-content: space-between;
-  display: flex;
-  letter-spacing: 4px;
-  align-items: center;
-}
-
-nav .header img {
-  height: 60px;
-  margin-left: 15px;
-  margin-right: 25px;
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 nav ul{
   display: flex;
   list-style: none;
-  width: 40%;
+  width: 10%;
   justify-content: space-around;
 }
 
@@ -63,9 +57,19 @@ nav ul li a {
   text-decoration: none;
   font-size: 0.8em;
 }
+
 nav ul li a:hover{
   color:rgb(255, 255, 255);
 }
+
+nav header img {
+  height: 60px;
+  margin-left: 15px;
+  margin-right: 25px;
+}
+
+
+
 
 /*Hamburger Menu*/
 .menu-toggle{
@@ -135,7 +139,7 @@ nav ul li a:hover{
       height: 100vh;
       flex-direction: column;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-evenly;
       background-color: #442454;
       z-index: 1;
       transform: translateX(100%);
@@ -143,9 +147,9 @@ nav ul li a:hover{
       opacity: 0;
   }
   nav{
-    justify-content: space-between;
+    justify-content: space-around;
   }
-  .header{
+  header{
     z-index: 2;
   }
 }
@@ -208,9 +212,6 @@ footer {
   text-align: center;
 }
 
-h1 {
-  font-size: 1.6em;
-}
 
 label {
   display: block;
