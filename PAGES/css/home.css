@@ -1,9 +1,9 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Ubuntu', sans-serif;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,6 +154,9 @@ nav header img {
   header{
     z-index: 2;
   }
+  footer{
+    z-index: 2;
+  }
 }
 
 nav ul.slide{
@@ -241,7 +244,7 @@ select{
   width: 150%;
   height: 170%;
   padding: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -305,37 +308,45 @@ button:hover {
 
 .sidebar {
   position: fixed;
-  top: 100px;
-  left: 15px;
+  top: 80px;
+  left: 0;
   width: 300px;
   height: 90%;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background: #442454;
+  padding: 24px;
   box-sizing: border-box;
   align-items: center;
-  border: 1.8px solid rgba(0, 0, 0, 0.514);
+  color: white;
 }
 
-.sidebar h2 {
-  margin-bottom: 20px;
+.sidebar img{
+  height: 12px;
+  margin-left: 40px;
+  padding: 0;
 }
 .sidebar ul {
   list-style-type: none;
   padding: 0;
 }
-.sidebar li {
-  margin-bottom: 10px;
-}
-.sidebar a {
+
+#reset-search {
+  margin-left: 10px;
+  color: #442454;
+  ;
   text-decoration: none;
-  color: #1e0d1f;
-}
-.sidebar a:hover {
-  color: #007bff;
+  color: white;
+  margin-bottom: 20px;
+  justify-content: flex-start;
+  align-items: left;
+  font-style: normal;
+  letter-spacing: 1px;
 }
 
+#reset-search:hover {
+  background-color: #6b467d;
+  padding: 7px;
+  border-radius: 5px;
+}
 
 footer {
   background-color: white;

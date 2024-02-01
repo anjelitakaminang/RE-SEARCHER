@@ -8,6 +8,10 @@ include "koneksi.php";
 <head>
     <title>Login ke Website</title>
     <link rel="stylesheet" type="text/css" href="css/login.css">
+    <!--Font Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <?php
@@ -29,7 +33,7 @@ include "koneksi.php";
     ?>
       
   <div class="login-container">
-    <h1>RE.SEARCHER</h1>
+    <h1>Welcome! RE.SEARCHER</h1>
 
     <form method="post">
       <input

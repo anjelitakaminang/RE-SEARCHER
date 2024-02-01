@@ -9,7 +9,8 @@
         *{
             margin: 0;
             padding: 0;
-         }
+            font-family: 'Ubuntu', sans-serif;
+        }
 
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -91,6 +92,14 @@
             border: 2px solid #000000;
             border-radius: 10px; /* Added border radius */
             overflow: hidden; /* Hide the overflowing content */
+            width: 150%;
+            height: 170%;
+            margin-bottom: 15px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+            align-items: center;
+            border: 1.8px solid rgba(0, 0, 0, 0.514);
         }
     
         h2 {
@@ -102,13 +111,14 @@
             font-size: 0.9em;
             margin-bottom: 20px;
             text-align: center;
+            padding: 10px;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 10px;
-            padding: 30px;
+            padding: 10px;
         }
        
         th,
@@ -167,7 +177,12 @@
             padding: 30px;
             font-style: italic;
         }
+        
     </style>
+    <!--Font Google-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -178,7 +193,9 @@
         </header>
         </div>
         <ul>
-            <li><a href="../home.php">Home</a></li>
+            <li><a href="../home.php">
+            <img src="../pic/home.png" alt="" class="icon">
+            </a></li>
         </ul>
     </nav>
 

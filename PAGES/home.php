@@ -14,15 +14,22 @@ if(!isset($_SESSION['user'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman HOME</title>
     <link rel="stylesheet" href="css/home.css">
+	<!--Font Google-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+	
+
 </head>
 <body>
 	<nav>     
-      <div><header>
-	  	<img src="pic/logo.png" alt="Logo">
-          <h1>RE.SEARCHER</h1>
-      </header>
-      </div>
-        <ul>
+		<div>
+			<header>
+				<img src="pic/logo.png" alt="Logo">
+				<h1>RE.SEARCHER</h1>
+			</header>
+    	</div>
+    	<ul>
             <li><a href="html/profile.html">Profile</a></li>
             <li><a href="html/about.html">About</a></li>
             <li><a href="html/grading.html">Grading Standard</a></li>
@@ -44,7 +51,7 @@ if(!isset($_SESSION['user'])) {
     <div id="root"></div>
 
 	<div class="container">
-		<h4> Input your grade and interest:</h4>
+		<h3> Input your grade and interest:</h3>
 			<form id="recommendation-form">
 			<div class="form-row0">
 				<label for="major">Major:</label>
@@ -89,14 +96,16 @@ if(!isset($_SESSION['user'])) {
 			</form>
 			
 			<div class="sidebar">
-				<h3>Search History</h3>
+			<a href="#" id="reset-search">New Generate<img src="pic/ad.png"></a>
 				<ul id="searchHistory">
 					<!-- Previous searches will be displayed here -->
 				</ul>
+				
 			</div>
 		
 			<script src="js/side.js"></script>
 			<script src="js/script.js"></script>
+			<script src="js/new.js"></script>
 			<div id="app"></div>
 		</div>			
 </body>
