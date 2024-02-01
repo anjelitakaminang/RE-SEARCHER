@@ -37,7 +37,9 @@ if(!isset($_SESSION['user'])) {
         </div>
     </nav>
 	
-  
+    <footer>
+        <h5>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h5>
+    </footer>
     </div>
     <div id="root"></div>
 
@@ -77,19 +79,25 @@ if(!isset($_SESSION['user'])) {
 				<input type="text" id="interest" name="interest" placeholder="e.g. I interested in Machine Learning...">
 			</div>
 				<button type="submit">Generate</button>
+
+			<div class="result-box">
+				<label for="result">Recommended Topic:</label>
+				<div><p id="result-text"></p></div>
+			</div>
+				
+
 			</form>
+			
 			<div class="sidebar">
 				<h3>Search History</h3>
 				<ul id="searchHistory">
 					<!-- Previous searches will be displayed here -->
 				</ul>
 			</div>
+		
 			<script src="js/side.js"></script>
 			<script src="js/script.js"></script>
 			<div id="app"></div>
-		</div>	
-		<footer>
-        <h5>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h5>
-    </footer>		
+		</div>			
 </body>
 </html>
