@@ -23,7 +23,7 @@ if(!isset($_SESSION['user'])) {
       </header>
       </div>
         <ul>
-            <li><a href="">Profile</a></li>
+            <li><a href="html/profile.html">Profile</a></li>
             <li><a href="html/about.html">About</a></li>
             <li><a href="html/grading.html">Grading Standard</a></li>
             <li><a href="html/setting.html">Settings</a></li>

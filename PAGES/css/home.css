@@ -166,9 +166,9 @@ nav ul.slide{
   display: flex;
   flex-direction: column;
   background-color: #ffffff;;
-  margin-top: 100px;
+  margin-top: 110px;
   justify-content: center;
-  width: 50%;
+  width: 40%;
   font-style: italic;
   }
 
@@ -275,7 +275,7 @@ button {
   border-radius: 10px;
   cursor: pointer;
   align-items: right;
-  margin-left: 137%;
+  margin-left: 135%;
 }
 
 button:hover {
@@ -293,7 +293,6 @@ button:hover {
 
 .result-box p{
   width: 150%;
- 
   padding: 100px;
   margin-bottom: 10px;
   background: rgba(255, 255, 255, 0.8);
