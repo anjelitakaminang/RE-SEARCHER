@@ -37,9 +37,7 @@ if(!isset($_SESSION['user'])) {
         </div>
     </nav>
 	
-    <footer>
-        <h6>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h6>
-    </footer>
+  
     </div>
     <div id="root"></div>
 
@@ -89,6 +87,9 @@ if(!isset($_SESSION['user'])) {
 			<script src="js/side.js"></script>
 			<script src="js/script.js"></script>
 			<div id="app"></div>
-		</div>			
+		</div>	
+		<footer>
+        <h5>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h5>
+    </footer>		
 </body>
 </html>

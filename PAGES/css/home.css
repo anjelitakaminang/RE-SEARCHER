@@ -161,24 +161,12 @@ nav ul.slide{
   opacity: 1;
 }
 
-footer {
-  background-color: white;
-  color: black;
-  text-align: center;
-  padding: 5px;
-  position: fixed;
-  bottom: 0;
-  left: 0; /* Align to the left */
-  width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
 
 .container{
   display: flex;
   flex-direction: column;
   background-color: #ffffff;;
-  margin-top: 60px;
+  margin-top: 100px;
   justify-content: center;
   width: 50%;
   font-style: italic;
@@ -228,33 +216,39 @@ select{
   box-sizing: border-box;
   text-align: center;
   outline: #ffffff;
-  border-color: #000000;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  align-items: center;
+  border: 1.8px solid rgba(0, 0, 0, 0.514);
+
 }
 
 .form-row1 input {
   width: 150%;
   padding: 10px;
   margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
-  text-align: center;
-  outline: #ffffff;
-  border-color: #000000;
-}
+  align-items: center;
+  border: 1.8px solid rgba(0, 0, 0, 0.514);
+} 
 
 .form-row2 input  {
   width: 150%;
-  height: 160%;
-  padding: 10px;
-  margin-bottom: 10px;
+  height: 170%;
+  padding: 20px;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
-  text-align: center;
-  outline: #ffffff;
-  border-color: #000000;
-  margin-top: 0;
+  align-items: center;
+  border: 1.8px solid rgba(0, 0, 0, 0.514);
 }
-
 input::placeholder {
   font-style: italic;
   text-align: left;
@@ -265,7 +259,7 @@ button {
   color: white;
   padding: 10px 15px;
   border: none;
-  margin-top: 12%;
+  margin-top: 17%;
   border-radius: 10px;
   cursor: pointer;
   align-items: right;
@@ -277,7 +271,7 @@ button {
   color: white;
   padding: 10px 15px;
   border: none;
-  margin-top: 5px;
+  margin-top: 10px;
   border-radius: 10px;
   cursor: pointer;
   align-items: right;
@@ -288,9 +282,31 @@ button:hover {
   background-color: #6b467d;
 }
 
+
+.result-box {
+  margin-top: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  height: 90%;
+}
+
+.result-box p{
+  width: 150%;
+ 
+  padding: 100px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  align-items: center;
+  border: 1.8px solid rgba(0, 0, 0, 0.514);
+}
+
 .sidebar {
   position: fixed;
-  top: 90px;
+  top: 100px;
   left: 15px;
   width: 300px;
   height: 90%;
@@ -300,7 +316,7 @@ button:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   align-items: center;
-  border: 1.8px solid black;
+  border: 1.8px solid rgba(0, 0, 0, 0.514);
 }
 
 .sidebar h2 {
@@ -319,4 +335,18 @@ button:hover {
 }
 .sidebar a:hover {
   color: #007bff;
+}
+
+
+footer {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.578);
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 0;
+  left: 0; /* Align to the left */
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
