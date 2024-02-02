@@ -173,13 +173,14 @@ nav ul.slide{
   justify-content: center;
   width: 40%;
   font-style: italic;
+  margin-left: 20%;
   }
 
 form {
   width: 70%;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding: 5px;
   text-align: center;
 }
 
@@ -199,6 +200,7 @@ form {
 }
 
 .form-row2 {
+  margin-top: 0;
   height: 100px;
   padding: 20px;
   box-sizing: border-box;
@@ -310,7 +312,7 @@ button:hover {
   position: fixed;
   top: 80px;
   left: 0;
-  width: 300px;
+  width: 270px;
   height: 90%;
   background: #442454;
   padding: 24px;
