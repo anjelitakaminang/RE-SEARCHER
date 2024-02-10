@@ -298,7 +298,8 @@ button:hover {
 
 .result-box p{
   width: 150%;
-  padding: 100px;
+  height: 200%;
+  padding: 10px;
   margin-bottom: 10px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
@@ -306,6 +307,7 @@ button:hover {
   box-sizing: border-box;
   align-items: center;
   border: 1.8px solid rgba(0, 0, 0, 0.514);
+  font-style: normal;
 }
 
 .sidebar {
