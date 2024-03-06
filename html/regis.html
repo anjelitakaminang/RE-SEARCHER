@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login ke Website</title>
+    <link rel="stylesheet" type="text/css" href="../css/regis.css">
+    <!--Font Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="regis-container">
+    <h1>Sign Up</h1>
+        <form action="../regis.php" method="POST">
+            <div class="majoring">
+                    <label for="major">Major:</label>
+					<select id="major" name="major">
+                        <option>Choose Major:</option>
+						<option value="Sistem Informasi">Sistem Infomasi</option>
+						<option value="Informatika">Informatika</option>
+                    </select>
+            </div> 
+            <div class="inputbox">
+                <label for="fullname">Fullname:</label>
+                <input
+                    type="text"
+                    name="fullname"
+                    placeholder="Input Fullname"
+                    required
+                />
+                <i class='bx bx-user'></i>
+            </div>
+            <div class="inputbox">
+                <label for="username">Username:</label>
+                <input
+                    type="text"
+                    name="username"
+                    placeholder="Input Username"
+                    required
+                />
+                <i class='bx bx-user'></i>
+            </div>
+            <div class="inputbox">
+                <label for="email">Email:</label>
+                <input
+                    type="text"
+                    name="email"
+                    placeholder="Input Email"
+                    required
+                />
+                <i class='bx bx-lock-alt' ></i>
+            </div>
+            <div class="inputbox">
+                <label for="Password">Password:</label>
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Input Password"
+                    required
+                />
+                <i class='bx bx-lock-alt' ></i>
+            </div>
+            <td><button type="submit" name="save">Save</button></td>
+            <div class="login_link">
+                <p>Already have an account? <a href="../login.php">Sign In</a></p>
+            </div>
+        </form>
+  </div> 
+  <div id="root"></div>
+ </body>
+ </html>

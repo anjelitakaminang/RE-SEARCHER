@@ -115,15 +115,16 @@
         }
 
         footer {
-            background-color: #442454;
-            color: white;
-            text-align: center;
-            padding: 5px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+        background-color: white;
+        color: rgba(0, 0, 0, 0.578);
+        text-align: center;
+        padding: 1px;
+        position: absolute;
+        bottom: 0;
+        left: 0; /* Align to the left */
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         }
 
         div h3{
@@ -145,36 +146,25 @@
 </head>
 
 <body>
-    <nav>
-      <div><header>
-          <img src="../pic/logo.png" alt="Logo">
-          <h1>RE.SEARCHER</h1>
-      </header>
-      </div>
-      <ul>
-        <li><a href="../home.php">
-        <img src="../pic/home.png" alt="" class="icon">
-        </a></li>
-    </ul>
-   </nav>
- 
     <div id="passform">
-    <h3>Are you sure you want to change your password?</h3>
+    <h3>Change your password</h3>
         <form action="/action_page.php">
-            <label for="fname">Old Password</label>
+            <label for="fname">Email :</label>
+            <input type="text" id="fname" name="Old Password" placeholder="input your email">
+
+            <label for="fname">Old Password :</label>
             <input type="text" id="fname" name="Old Password" placeholder="input your old password">
         
-            <label for="lname">New Password</label>
+            <label for="lname">New Password :</label>
             <input type="text" id="lname" name="New Password" placeholder="input your new password"> 
 
-            <label for="lname">Retype</label>
+            <label for="lname">Retype :</label>
             <input type="text" id="lname" name="Retype new password" placeholder="retype new password">     
-            <input type="submit" value="Change Password" href="../home.php">
+            <input type="submit" value="Change Password" href="loginn.html">
         </form>
     </div> 
-
     <footer>
-        <h3>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h3>
+        <h5>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h5>
     </footer>
       
 </body>

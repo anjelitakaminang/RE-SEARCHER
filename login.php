@@ -14,32 +14,44 @@ include "koneksi.php";
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <?php
-        if(isset($_POST['username'])){
-            $username = $_POST['username'];
-            $password = md5($_POST['password']);
+<?php
 
-            $query = mysqli_query($koneksi, "SELECT*FROM user where username='$username' and password='$password'");
-            
-            if (mysqli_num_rows($query) > 0){
-                $data = mysqli_fetch_array($query);
-                $_SESSION['user'] = $data;
-                echo '<script>location.href="home.php";</script>';
 
-            }else{
-                echo '<script>alert("Email atau Password tidak ditemukan");</script>';
-            }
-        }
-    ?>
-      
-      <div class="login-container">
-    <h1>Login</h1>
+if(isset($_POST['major']) && isset($_POST['email']) && isset($_POST['password'])) {
+    $major = $_POST['major'];
+    $email = $_POST['email'];
+    $password = md5($_POST['password']); // Gunakan hashing yang lebih aman seperti bcrypt atau argon2id
+
+    $query = mysqli_query($koneksi, "SELECT * FROM user WHERE major='$major' AND email='$email' AND password='$password'");
+    
+    if(mysqli_num_rows($query) > 0) {
+        // Jika user ditemukan, lanjutkan dengan verifikasi major
+        $data = mysqli_fetch_array($query);
+        $_SESSION['user'] = $data;
+
+        echo '<script>location.href="home.php";</script>';
+        exit(); // Hentikan eksekusi skrip setelah melakukan redirect
+    } else {
+        echo '<script>alert("Data yang anda masukan salah.");</script>';
+    }
+}
+?>
+
+     <div class="login-container">
+    <h1>Sign In</h1>
         <form method="post">
+            <div class="majoring">
+					<select id="major" name="major" >
+                        <option>-- Select Major --</option>
+						<option value="Sistem Informasi" >Sistem Informasi</option>
+						<option value="Informatika">Informatika</option>
+                    </select>
+            </div> 
             <div class="inputbox">
                 <input
                     type="text"
-                    name="username"
-                    placeholder="Username"
+                    name="email"
+                    placeholder="Email"
                     required
                 />
                 <i class='bx bx-user'></i>
@@ -55,15 +67,14 @@ include "koneksi.php";
             </div>
              <div class="remember-forgot">
                 <label><input type="checkbox">Remember me</label>
-                <a href="#">Forgot password?</a> 
+                <a href="html/setting.html">Forgot password?</a> 
             </div>
             <td><button type="submit" name="login">Login</button></td>
             <div class="registerlink">
-                <p>Don't have an account? <a href="#">Register</a></p>
+                <p>Don't have an account? <a href="html/regis.html">Register</a></p>
             </div>
         </form>
   </div> 
   <div id="root"></div>
  </body>
  </html>
-

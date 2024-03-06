@@ -27,36 +27,54 @@ body::before {
 }
 
 .login-container {
-  width: 420px;
-  background: rgba(255, 255, 255, 0.8);
+  width: 400px;
+  background: rgba(255, 255, 255, 0.655);
   padding: 30px;
   border-radius: 10px;
-  
 }
 
 .login-container h1 {
-  font-size: 36px;
+  font-size: 35px;
   text-align: center;
+  color:#442454;
+  margin-bottom: 20px;
 }
-
 
 .login-container .inputbox{
   width: 100%;
   height: 50px;
-  margin: 30px 0;
+  margin: 12px 0;
   position: relative;
+}
+
+.login-container .majoring{
+  width: 100%;
+  height: 50px;
+  margin: 12px 0;
+  position: relative;
+}
+
+.majoring select{
+  width: 100%;
+  height: 88%;
+  border: none;
+  outline: none;
+  border: 4px solid rgba(255, 255, 255, 255);
+  border-radius: 40px;
+  font-size: 15px;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 .inputbox input{
   width: 100%;
-  height: 100%;
+  height: 80%;
   border: none;
   outline: none;
-  padding: 10px;
   border: 2px solid rgba(255, 255, 255, .2);
   border-radius: 40px;
   font-size: 16px;
-  padding: 20px 45px 20px 20px;
+  padding: 20px 22px 20px 20px;
   box-sizing: border-box;
 }
 
@@ -75,12 +93,13 @@ input::placeholder {
 
 .login-container button {
   width: 100%;
-  height: 45px;
+  height: 40px;
   background-color: #442454;
   color: white;
   border: none;
   border-radius: 40px;
   cursor: pointer;
+  font-size: 15px;
 }
 
 button:hover {
@@ -92,17 +111,19 @@ button:hover {
   justify-content: space-between;
   font-size: 14.5px;
   margin: -15px 0 15px;
+  color:#2e1938;
 }
 
 .remember-forgot label input {
   accent-color:#fff;
-  margin-right: 3px;
+  margin-right: 4px;
   margin-left: 0;
 }
   
 .remember-forgot a {
-  color: #624b6c;
+  color:#442454;
   text-decoration: none;
+  padding: 10px;
 }
 
 .remember-forgot a:hover {
@@ -112,11 +133,16 @@ button:hover {
 .login-container .registerlink{
   font-size: 14.5;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 15px;
+  color:#2e1938;
+}
+
+.remember-forgot label{
+  padding: 10px;
 }
 
 .registerlink p a{
-  color: #624b6c;
+  color:#442454;
   text-decoration: none;
   font-weight: 600;
 }

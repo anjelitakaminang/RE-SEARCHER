@@ -54,14 +54,14 @@
           background-color: #442454;
           color: white;
           padding: 14px 20px;
-          margin: 8px 0;
+          margin: 20px 0;
           border: none;
           border-radius: 4px;
           cursor: pointer;
         }
         
         input[type=submit]:hover {
-          background-color: #45a049;
+            background-color: #6b467d;
         }
 
         .passform {
@@ -85,7 +85,7 @@
             background-color: #442454;
             justify-content: space-between;
             color:white;
-            height: 60px;
+            height: 80px;
             align-items: center;
             width: 100%;
             position: fixed;
@@ -109,7 +109,7 @@
         }
 
         nav header img {
-            height: 45px;
+            height: 60px;
             margin-left: 20px;
             margin-right: 25px;
         }
@@ -121,19 +121,12 @@
         padding: 1px;
         position: absolute;
         bottom: 0;
-        left: 0;
+        left: 0; /* Align to the left */
         width: 100%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         }
 
-        form {
-        width: 200%;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        text-align: center;
-        }
         div h3{
             padding: 30px;
         }
@@ -143,26 +136,6 @@
         margin-bottom: 6px;
         justify-self: start;
         text-align: left;
-        }
-
-        .profile {
-            justify-content: left;
-
-        }
-
-        .orang {
-            justify-content: center;
-            text-align: left;
-            position: absolute;
-            top: 200px;
-            left: 300px;
-            height: 600px;
-            width: 750px;
-        }
-
-        p {
-            position: absolute;
-            text-align: center;
         }
 
     </style>
@@ -186,25 +159,20 @@
     </ul>
    </nav>
  
-    <div className="profile">
-    <h3></h3>
+    <div id="passform">
+    <h3>Change your password</h3>
         <form action="/action_page.php">
-            <label for="fname">Fullname</label>
-            <input type="text" id="fname" name="Nama Lengkap" placeholder="example....">
-
-            <label for="lname">Username</label>
-            <input type="text" id="lname" name="Email" placeholder="example...."> 
+            <label for="fname">Old Password</label>
+            <input type="text" id="fname" name="Old Password" placeholder="input your old password">
         
-            <label for="lname">Email</label>
-            <input type="text" id="lname" name="Email" placeholder="example...."> 
+            <label for="lname">New Password</label>
+            <input type="text" id="lname" name="New Password" placeholder="input your new password"> 
 
-            <label for="lname">Password</label>
-            <input type="text" id="lname" name="Nomor Regis" placeholder="example....">     
+            <label for="lname">Retype</label>
+            <input type="text" id="lname" name="Retype new password" placeholder="retype new password">     
+            <input type="submit" value="Change Password" href="../home.php">
         </form>
-    </div>
-    <div class="orang">
-        <img src="../pic/profil.png" alt="profile" style width="30%" height="40%">
-    </div>
+    </div> 
 
     <footer>
         <h5>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h5>
