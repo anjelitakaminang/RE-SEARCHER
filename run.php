@@ -6,8 +6,8 @@
 	//echo exec('echo "Hello World"');
 
 	// execute python script 
-	$pythonScript = "C:/xampp/htdocs/unklabot/unklabot.py";
-	$pythonexe = "C:\Users\jiank\AppData\Local\Programs\Python\Python39\python.exe";
+	$pythonScript = "";
+	$pythonexe = "";
 	
 	exec($pythonexe.' '.$pythonScript.' "'.$data['ask-rec'].'"', $output);
 

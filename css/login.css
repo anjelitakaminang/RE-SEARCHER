@@ -64,6 +64,7 @@ body::before {
   font-size: 15px;
   box-sizing: border-box;
   padding: 10px;
+  right: 20px;
 }
 
 .inputbox input{
@@ -81,7 +82,7 @@ body::before {
 .inputbox i{
   position: absolute;
   right: 20px;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
   font-size: 20px;
 }

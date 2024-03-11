@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Settings</title>
+    <title>Profile</title>
     <!-- Form Untuk Mengganti Password-->
     <style>
        *{
@@ -24,7 +24,7 @@
             background-color: #ffffff; /* Set background color to white */
             text-size-adjust: none;
             font-family: 'Monserrat', sans-serif;
-            overflow-x: hidden;
+            overflow: hidden;
             text-align: center;
         }
 
@@ -33,7 +33,6 @@
             position: absolute;
             top: 0;
             left: 0;
-            height: 100%;
             background: rgba(255, 255, 255, 0.2);
             z-index: -1;
             padding: 20%;
@@ -95,8 +94,9 @@
         nav ul{
             display: flex;
             list-style: none;
-            width: 10%;
+            width: 23%;
             justify-content: space-around;
+            align-items: center;
         }
 
         nav ul li a {
@@ -121,7 +121,7 @@
         padding: 1px;
         position: absolute;
         bottom: 0;
-        left: 0;
+        left: 0; /* Align to the left */
         width: 100%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -180,32 +180,32 @@
       </header>
       </div>
       <ul>
+        <li><a href="edit.html">Edit Profile</a></li>
         <li><a href="../home.php">
         <img src="../pic/home.png" alt="" class="icon">
         </a></li>
     </ul>
    </nav>
- 
     <div className="profile">
     <h3></h3>
         <form action="/action_page.php">
-            <label for="fname">Fullname</label>
-            <input type="text" id="fname" name="Nama Lengkap" placeholder="example....">
+            <label for="fullname">Fullname</label>
+            <input type="text" id="fname" name="Nama Lengkap">
 
-            <label for="lname">Username</label>
-            <input type="text" id="lname" name="Email" placeholder="example...."> 
+            <label for="username">Username</label>
+            <input type="text" id="lname" name="Email"> 
         
-            <label for="lname">Email</label>
-            <input type="text" id="lname" name="Email" placeholder="example...."> 
+            <label for="email">Email</label>
+            <input type="text" id="lname" name="Email"> 
 
-            <label for="lname">Password</label>
-            <input type="text" id="lname" name="Nomor Regis" placeholder="example....">     
+            <label for="password">Password</label>
+            <input type="text" id="lname" name="Nomor Regis">     
         </form>
     </div>
     <div class="orang">
         <img src="../pic/profil.png" alt="profile" style width="30%" height="40%">
     </div>
-
+    <script src="../js/profile.js"></script>
     <footer>
         <h5>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h5>
     </footer>

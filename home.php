@@ -85,14 +85,14 @@ date_default_timezone_set('Asia/Makassar');
 				</div>
 				<div class="form-row2" id="interests">
 					<label for="interest">Interest:</label>
-					<input type="text" id="input-chat" placeholder="e.g. I interested in Machine Learning...">
+					<input type="text" id="recommend" placeholder="e.g. I interested in Machine Learning...">
 				</div>
 				<div class="input-group-append">
-					<button class="btn btn-primary" type="button" id="generate">Generate</button>
+					<button class="btn btn-primary" type="button" id="generate">Get Recommendation</button>
 				</div>
 				<div class="result-box">
 					<label for="result">Recommended Topic:</label>
-					<div><p id="content-chat-feed"></p></div>
+					<div id="content-feed"></div>
 				</div>
 			</form>
 			<script src="baru.js"></script>
@@ -102,8 +102,6 @@ date_default_timezone_set('Asia/Makassar');
 			<script src="js/script.js"></script>
 			<script src="js/new.js"></script>
 			<div id="app"></div>
-		</div>	
-
-		
+	</div>	
 </body>
 </html>

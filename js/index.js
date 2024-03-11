@@ -7,15 +7,6 @@ function clean_input(txt_input){
 	return txt_input;
 }
 
-// user chat replay
-function response_user(chat, date){
-	var currentDate = new Date();
-    var datef = currentDate.toLocaleDateString("en-US", { day: "numeric", month: "short", year: "numeric" });
-      
-	var html = "<div class='containerbot darker'> <img src='./icons/user.png' alt='Avatar' class='right' style='width:100%;'> <div class='row'> <div class='col-sm-2'><span class='time-left'>"+date+"</br>"+datef+"</span></div> <div class='col-sm-10 text-end'>"+chat+"</div></div></div>";
-	return html;
-}
-
 // bot chat replay
 function response_bot(chat, prob, date){
 	var html = "<div class='containerbot'> <img src='./icons/bot.png' alt='Avatar' style='width:100%;'> <div class='row'> <div class='col-sm-10'>"+chat+"</div> <div class='col-sm-2'><span class='time-right'>"+prob+"%</br>"+date+"</span></div> </div> </div>";
@@ -36,41 +27,41 @@ function get_time(date){
 }
 
 // compile/execute chatbot
-function run_chatbot(){
+function run_recom(){
 	// get input chat
-	var input_chat = $('#input-chat').val(); 
+	var input_gni = $('#recommend').val(); 
 	
 	// clean input chat
-	input_chat = clean_input(input_chat);
+	input_gni = clean_input(input_gni);
 		
-	if(input_chat.length === 0){
+	if(input_gni.length === 0){
         alert("Sorry, write your text chat first.");
     }else{
 		
 		// Disable input field dan button
-		$('#input-chat').val(""); 
-		$("#input-chat").prop("disabled", true);
-		$("#btn-chat").prop("disabled", true);
+		$('#recommend').val(""); 
+		$("#recommend").prop("disabled", true);
+		$("#generate").prop("disabled", true);
 		
-		$("#content-chat-feed").append(response_user(input_chat, get_time(new Date)));
+		$("#content-feed").append(response_user(input_gni, get_time(new Date)));
 		force_scroll_bottom();
 		
 		// convert teks menjadi huruf kecil
-		input_chat = input_chat.toLowerCase();
+		input_gni = input_gni.toLowerCase();
 
 		// Call ajax
 		$.ajax({
 			type: "POST",
-			url: "run_unklabot.php",
-			data: {"input-chat": input_chat },
+			url: "run.php",
+			data: {"recommend": input_gni },
 			dataType:'text', //or HTML, JSON, etc.
 			success: function(response){
 				//alert(response);
 				console.log(response);
 				
 				// enable input field dan button
-				$("#input-chat").prop("disabled", false);
-				$("#btn-chat").prop("disabled", false);
+				$("#recommend").prop("disabled", false);
+				$("#generate").prop("disabled", false);
 				
 				// Mengambil bagian JSON dengan menggunakan regex
 				var jsonString = response.match(/\{.*\}/)[0];
@@ -92,14 +83,14 @@ function run_chatbot(){
 				
 				// response chatbot
 				const prob_val = (parseFloat(res_confidence)*100).toFixed(2);
-				$("#content-chat-feed").append(response_bot(res_response, prob_val, get_time(new Date)));
+				$("#content-feed").append(response_bot(res_response, prob_val, get_time(new Date)));
 				force_scroll_bottom();
 				
 			},
 			error: function(xhr, status, error){
 				// enable input field dan button
-				$("#input-chat").prop("disabled", false);
-				$("#btn-chat").prop("disabled", false);
+				$("#recommend").prop("disabled", false);
+				$("#generate").prop("disabled", false);
 				console.error(xhr);
 			}
 		});

@@ -27,7 +27,7 @@ import sys
 model_for_intent = SentenceTransformer('distilbert-base-nli-mean-tokens') # 768 dimensional
 
 # OpenAI API Key
-openai.api_key="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"
+openai.api_key=""
 
 """# Load Chroma Vector Database"""
 

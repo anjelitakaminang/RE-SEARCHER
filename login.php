@@ -12,6 +12,7 @@ include "koneksi.php";
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 <?php
@@ -66,7 +67,7 @@ if(isset($_POST['major']) && isset($_POST['email']) && isset($_POST['password'])
                 <i class='bx bx-lock-alt' ></i>
             </div>
              <div class="remember-forgot">
-                <label><input type="checkbox">Remember me</label>
+                <label><input type="checkbox" id="rememberMe">Remember me</label>
                 <a href="html/setting.html">Forgot password?</a> 
             </div>
             <td><button type="submit" name="login">Login</button></td>
@@ -75,6 +76,9 @@ if(isset($_POST['major']) && isset($_POST['email']) && isset($_POST['password'])
             </div>
         </form>
   </div> 
+    <div>
+        <script src="../js/login.js"></script>
+    </div>
   <div id="root"></div>
  </body>
  </html>
