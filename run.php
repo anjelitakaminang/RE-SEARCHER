@@ -1,13 +1,13 @@
 <?php
 	// POST Data
-	$data['ask-rec'] = $_POST['recommend'];
+	$data['ask-rec'] = $_POST['input-rec'];
 	//$data['user-question'] = "input-chat";
 
 	//echo exec('echo "Hello World"');
 
 	// execute python script 
-	$pythonScript = "";
-	$pythonexe = "";
+	$pythonScript = "C:/xampp/htdocs/RE-SEARCHER/researcher.py";
+	$pythonexe = "C:\Users\jiank\AppData\Local\Programs\Python\Python39\python.exe";
 	
 	exec($pythonexe.' '.$pythonScript.' "'.$data['ask-rec'].'"', $output);
 

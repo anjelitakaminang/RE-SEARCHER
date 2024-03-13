@@ -27,14 +27,14 @@ import sys
 model_for_intent = SentenceTransformer('distilbert-base-nli-mean-tokens') # 768 dimensional
 
 # OpenAI API Key
-openai.api_key=""
+openai.api_key="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"
 
 """# Load Chroma Vector Database"""
 
 # Initialize a client object
 client = chromadb.Client(Settings(
     chroma_db_impl="duckdb+parquet",
-    persist_directory="C:/xampp/htdocs/unklabot/data/unklab_vector_db" # Optional, defaults to .chromadb/ in the current directory
+    persist_directory="C:/xampp/htdocs/RE-SEARCHER/data/unklab_vector_db" # Optional, defaults to .chromadb/ in the current directory
 ))
 
 # list all collections
@@ -102,7 +102,7 @@ def user_query_chromadb_default(input_query, input_k):
 
 # create prompt openai
 def create_openai_prompt(context, query):
-    query = query.replace('topik research project', 'fakultas ilmu komputer')
+    query = query.replace('unklab', 'universitas klabat')
     header = "Jawab pertanyaan sejujur ​​mungkin menggunakan konteks yang disediakan, jawab dengan halus, dan jika jawabannya tidak terdapat dalam teks data dibawah ini maka dijawab dengan 'Maaf, saya tidak punya cukup konteks untuk menjawab pertanyaan tersebut.'. Sesuaikan penggunaan bahasa pada saat menjawab. Jika pertanyaan dalam bahasa indonesia, dijawab dengan bahasa indonesia. Jika pertanyaan dalam bahasa inggris, dijawab dengan bahasa inggris."
     return header + "\n\nData Context:\n" + context + "\n\nPertanyaan yang harus dijawab:\n" + query + "\n"
 

@@ -14,7 +14,6 @@ date_default_timezone_set('Asia/Makassar');
     <meta charset="UTF-8">
 	<title>Sistem Rekomendasi Topik Research Project berbasis AI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<link rel="stylesheet" href="css/home.css">
 	<!--Font Google-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,9 +47,7 @@ date_default_timezone_set('Asia/Makassar');
 		<footer>
 			<h5>© 2024 - Fakultas Ilmu Komputer - Universitas Klabat</h5>
 		</footer>
-    </div>
     <div id="root"></div>
-
 	<div class="container">
 		<h3> Input your grade and interest:</h3>
 			<form id="recommendation-form">
@@ -85,23 +82,22 @@ date_default_timezone_set('Asia/Makassar');
 				</div>
 				<div class="form-row2" id="interests">
 					<label for="interest">Interest:</label>
-					<input type="text" id="recommend" placeholder="e.g. I interested in Machine Learning...">
+					<input type="text" id="input-rec" placeholder="e.g. I interested in Machine Learning...">
 				</div>
 				<div class="input-group-append">
-					<button class="btn btn-primary" type="button" id="generate">Get Recommendation</button>
+					<button class="btn btn-primary" id="btn-rec" type="button">Get Recommendation</button>
 				</div>
-				<div class="result-box">
+				<div class="result-box"  id="content-rec-feed">
 					<label for="result">Recommended Topic:</label>
-					<div id="content-feed"></div>
 				</div>
 			</form>
-			<script src="baru.js"></script>
-		
 		</div>
 	</div>
-			<script src="js/script.js"></script>
-			<script src="js/new.js"></script>
-			<div id="app"></div>
-	</div>	
+
+	<script src="js/script.js"></script>
+	<script src="js/rec.js"></script>
+	<script src="js/scroll.js"></script>
+
+	<div id="app"></div>
 </body>
 </html>
