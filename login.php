@@ -55,7 +55,7 @@ if(isset($_POST['major']) && isset($_POST['email']) && isset($_POST['password'])
                     placeholder="Email"
                     required
                 />
-                <i class='bx bx-user'></i>
+                <i class='bx bx-envelope'></i>
             </div>
             <div class="inputbox">
                 <input

@@ -37,9 +37,6 @@ function run_system(){
 		$("#input-rec").prop("disabled", true);
 		$("#btn-rec").prop("disabled", true);
 		
-		$("#content-rec-feed").append(response_user(input_rec, get_time(new Date)));
-		force_scroll_bottom();
-		
 		// convert teks menjadi huruf kecil
 		input_rec = input_rec.toLowerCase();
 
