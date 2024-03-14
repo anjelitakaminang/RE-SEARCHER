@@ -114,21 +114,17 @@ date_default_timezone_set('Asia/Makassar');
                         <button class="btn btn-primary" id="btn-rec" type="button">Get Recommendation</button>
                     </div>
                     <div class="result-box"  id="content-rec-feed">
-                        <label for="result">Recommended Topic:</label>
+                        <label>Recommended Topic:</label>
+                        <p id="content-chat-feed"></p>
                     </div>
                 </form>
-
-            </div>
         </div>
 
     <!-- Scripts -->
 
-    <script src="temp/js/custom.min.js"></script>
     <script src="./js/sidebar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./js/func_actions.js"></script>
-    <script src="js/script.js"></script>
 	<script src="js/rec.js"></script>
 	<script src="js/scroll.js"></script>
 	

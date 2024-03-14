@@ -7,6 +7,21 @@ function clean_input(txt_input){
 	return txt_input;
 }
 
+// user chat replay
+function response_user(chat, date){
+	var currentDate = new Date();
+    var datef = currentDate.toLocaleDateString("en-US", { day: "numeric", month: "short", year: "numeric" });
+      
+	var html = "<div class='containerbot darker'> <img src='./icons/user.png' alt='Avatar' class='right' style='width:100%;'> <div class='row'> <div class='col-sm-2'><span class='time-left'>"+date+"</br>"+datef+"</span></div> <div class='col-sm-10 text-end'>"+chat+"</div></div></div>";
+	return html;
+}
+
+// bot chat replay
+function response_bot(chat, prob, date){
+	var html = "<div class='containerbot'> <img src='./icons/bot.png' alt='Avatar' style='width:100%;'> <div class='row'> <div class='col-sm-10'>"+chat+"</div> <div class='col-sm-2'><span class='time-right'>"+prob+"%</br>"+date+"</span></div> </div> </div>";
+	return html;
+}
+
 // get time date today
 function get_time(date){
 	let hours = date.getHours();
@@ -19,6 +34,7 @@ function get_time(date){
 	minutes = minutes < 10 ? '0' + minutes : minutes; 
 	return hours + ':' + minutes + ' ' + ampm;
 }
+
 
 // compile/execute chatbot
 function run_system(){
