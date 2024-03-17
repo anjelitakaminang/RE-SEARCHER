@@ -36,21 +36,21 @@ date_default_timezone_set('Asia/Makassar');
             </div>
             <div class="main">
                 <div class="list-item">
-                    <a href="html/profile.html">
+                    <a href="page_si.php">
+                        <img src="./pic/home.png" alt="" class="icon">
+                        <span class="description">Home</span>
+                    </a>
+                </div>
+                <div class="list-item">
+                    <a href="PAGE_SI/profile.php">
                         <img src="./pic/user.png" alt="" class="icon">
                         <span class="description">Profile</span>
                     </a>
                 </div>
                 <div class="list-item">
-                    <a href="html/grading.html">
+                    <a href="PAGE_SI/grading.php">
                         <img src="./pic/table.png" alt="" class="icon">
                         <span class="description">Grading Standard</span>
-                    </a>
-                </div>
-                <div class="list-item">
-                    <a href="html/about.html">
-                        <img src="./pic/about.png" alt="" class="icon">
-                        <span class="description">About</span>
                     </a>
                 </div>
             </div>
@@ -67,6 +67,11 @@ date_default_timezone_set('Asia/Makassar');
         <div class="headbar">
             <div class="menu-profile">
                 <ul>
+                    <li></li><a  href="PAGE_SI/about.html" role="button" lt=""><img src="./pic/about.png" alt="" class="icon"></a></li>
+                </ul>
+            </div>
+            <div class="menu-profile">
+                <ul>
                     <li></li><a  href="logout.php" role="button" lt=""><img src="./pic/logout.png" alt="" class="icon"></a></li>
                 </ul>
             </div>
@@ -80,7 +85,7 @@ date_default_timezone_set('Asia/Makassar');
                     <div class="form-row0">
                         <label for="major">Major:</label>
                         <select id="major" name="major">
-                            <option>Choose Subject : </option>
+                            <option>Choose Subject (Sistem Informasi) : </option>
                             <option value="WD">Computer Programming</option>
                             <option value="DM">Discrete Mathematics</option>
                             <option value="DSA">Data Structure and Algorithms</option>
@@ -111,7 +116,7 @@ date_default_timezone_set('Asia/Makassar');
                         <input type="text" id="input-rec" placeholder="e.g. I interested in Machine Learning...">
                     </div>
                     <div class="input-group-append">
-                        <button class="btn btn-primary" id="btn-rec" type="button">Get Recommendation</button>
+                        <button id="btn-rec" type="button">Get Recommendation</button>
                     </div>
                     <div class="result-box"  id="content-rec-feed">
                         <label>Recommended Topic:</label>
@@ -125,8 +130,8 @@ date_default_timezone_set('Asia/Makassar');
     <script src="./js/sidebar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="js/rec.js"></script>
-	<script src="js/scroll.js"></script>
+	<script src="RE-SEARCHER/js/rec.js"></script>
+	<script src="RE-SEARCHER/js/scroll.js"></script>
 	
 </body>
 </html>

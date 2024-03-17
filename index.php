@@ -29,9 +29,19 @@ if(isset($_POST['major']) && isset($_POST['email']) && isset($_POST['password'])
         // Jika user ditemukan, lanjutkan dengan verifikasi major
         $data = mysqli_fetch_array($query);
         $_SESSION['user'] = $data;
-
-        echo '<script>location.href="home.php";</script>';
-        exit(); // Hentikan eksekusi skrip setelah melakukan redirect
+        
+       // Periksa apakah $data['major'] sama dengan 'Sistem Informasi'
+        if ($data['major'] == 'Sistem Informasi') {
+            // Redirect ke halaman page_si.php jika major adalah 'Sistem Informasi'
+            echo '<script>location.href="page_si.php";</script>';
+        } 
+        // Periksa apakah $data['major'] sama dengan 'Informatika'
+        else if ($data['major'] == 'Informatika') {
+            // Redirect ke halaman page_i.php jika major adalah 'Informatika'
+            echo '<script>location.href="page_i.php";</script>';
+        }
+        // Hentikan eksekusi skrip setelah melakukan redirect
+        exit();
     } else {
         echo '<script>alert("Data yang anda masukan salah.");</script>';
     }

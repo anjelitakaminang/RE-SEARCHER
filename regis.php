@@ -9,7 +9,7 @@ $password = md5($_POST["password"]);
 $query_sql = "INSERT INTO user (major, fullname, username, email, password) VALUES ('$major', '$fullname', '$username', '$email', '$password') ";
 
 if (mysqli_query($koneksi, $query_sql)){
-    header("Location: login.php");
+    header("Location: index.php");
 }else{
     echo "Registration failed : ". mysqli_error($koneksi);
 }
