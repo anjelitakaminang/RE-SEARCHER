@@ -67,7 +67,7 @@ date_default_timezone_set('Asia/Makassar');
         <div class="headbar">
             <div class="menu-profile">
                 <ul>
-                    <li></li><a  href="PAGE_SI/html/about.html" role="button" lt=""><img src="/RE-SEARCHER/pic/about.png" alt="" class="icon"></a></li>
+                    <li></li><a  href="about.html" role="button" lt=""><img src="/RE-SEARCHER/pic/about.png" alt="" class="icon"></a></li>
                 </ul>
             </div>
             <div class="menu-profile">

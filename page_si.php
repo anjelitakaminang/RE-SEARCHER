@@ -118,9 +118,9 @@ date_default_timezone_set('Asia/Makassar');
                     <div class="input-group-append">
                         <button id="btn-rec" type="button">Get Recommendation</button>
                     </div>
-                    <div class="result-box"  id="content-rec-feed">
+                    <div class="result-box">
                         <label>Recommended Topic:</label>
-                        <p id="content-chat-feed"></p>
+                        <p id="content-rec-feed"></p>
                     </div>
                 </form>
         </div>
@@ -130,8 +130,8 @@ date_default_timezone_set('Asia/Makassar');
     <script src="./js/sidebar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="RE-SEARCHER/js/rec.js"></script>
-	<script src="RE-SEARCHER/js/scroll.js"></script>
+	<script src="js/rec.js"></script>
+	<script src="js/scroll.js"></script>
 	
 </body>
 </html>

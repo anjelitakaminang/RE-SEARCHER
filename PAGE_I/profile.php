@@ -69,7 +69,7 @@
         </div>
 
     <div class="container">
-        <h1>Profil Pengguna</h1>
+        <h1>User Profile</h1>
         <div class="profile">
         <?php include 'C:/xampp/htdocs/RE-SEARCHER/showprofile.php'; ?>
     </div>

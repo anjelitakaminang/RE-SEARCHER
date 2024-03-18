@@ -34,7 +34,7 @@ openai.api_key="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"
 # Initialize a client object
 client = chromadb.Client(Settings(
     chroma_db_impl="duckdb+parquet",
-    persist_directory="C:/xampp/htdocs/RE-SEARCHER/data/unklab_vector_db" # Optional, defaults to .chromadb/ in the current directory
+    persist_directory="C:/xampp/htdocs/RE-SEARCHER/data/researcher_vector_db" # Optional, defaults to .chromadb/ in the current directory
 ))
 
 # list all collections
@@ -102,9 +102,9 @@ def user_query_chromadb_default(input_query, input_k):
 
 # create prompt openai
 def create_openai_prompt(context, query):
-    query = query.replace('unklab', 'universitas klabat')
-    header = "Jawab pertanyaan sejujur ​​mungkin menggunakan konteks yang disediakan, jawab dengan halus, dan jika jawabannya tidak terdapat dalam teks data dibawah ini maka dijawab dengan 'Maaf, saya tidak punya cukup konteks untuk menjawab pertanyaan tersebut.'. Sesuaikan penggunaan bahasa pada saat menjawab. Jika pertanyaan dalam bahasa indonesia, dijawab dengan bahasa indonesia. Jika pertanyaan dalam bahasa inggris, dijawab dengan bahasa inggris."
-    return header + "\n\nData Context:\n" + context + "\n\nPertanyaan yang harus dijawab:\n" + query + "\n"
+    query = query.replace('topik', 'topik research project')
+    header = "Berikan rekomendasi sejujur ​​mungkin menggunakan konteks yang disediakan, jawab dengan halus, dan jika jawabannya tidak terdapat dalam teks data dibawah ini maka dijawab dengan 'Maaf, saya tidak punya cukup konteks untuk menjawab pertanyaan tersebut.'. Sesuaikan penggunaan bahasa pada saat menjawab. Jika pertanyaan dalam bahasa indonesia, dijawab dengan bahasa indonesia. Jika pertanyaan dalam bahasa inggris, dijawab dengan bahasa inggris."
+    return header + "\n\nData Context:\n" + context + "\n\nRekomendasi yang harus diberikan:\n" + query + "\n"
 
 # generate answer from gpt-3
 def genereate_gpt_answer(prompt):
@@ -150,7 +150,7 @@ def run_unklabot_default(input_query):
 #query = "what can a student the Informatics Study Program work as?"
 #docs, res = user_query_chromadb(query, "fakultas_ilmu_komputer.txt", 2)
 
-"""### **MANAGE CHATBOT RESPONSE (UNKLABOT 1.0)**"""
+"""### **MANAGE SYSTEM RESPONSE (RE.SEARCHER 1.0)**"""
 
 def ask_unklabot(query):
     # intent recognition
